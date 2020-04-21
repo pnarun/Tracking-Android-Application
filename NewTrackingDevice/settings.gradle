@@ -1,0 +1,2 @@
+rootProject.name='NewTrackingDevice'
+include ':app'

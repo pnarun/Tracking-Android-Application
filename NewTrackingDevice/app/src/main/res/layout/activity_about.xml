@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="361dp"
+        android:layout_height="585dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="26dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Vehicle theft is the commonly faced problem by people around the world. Global positioning system known as (GPS) is the tool that is widely used for locating any object.  Google maps is one of the applications that works mainly based on GPS. The motivation for developing a personal anti-theft vehicle tracking application is to reduce the number of thefts by using this utility.   The application will be developed mainly by embedding the API of google maps through which the location of the vehicle can be obtained in real time. Based on the change in co-ordinates of the vehicle, theft will be detected and owner will be notified about the theft occurred. The person can track his vehicle as soon he is notified so that he could take further actions. Through this, the safety of vehicles can be ensured. "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="26dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:fontFamily="@font/audiowide"
+        android:text="About:-"
+        android:textColor="@color/skyblue"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

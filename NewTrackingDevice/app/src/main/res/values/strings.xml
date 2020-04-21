@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NewTrackingDevice</string>
+    <string name="title_activity_new_device_map">Map</string>
+</resources>

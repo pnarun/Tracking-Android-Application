@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IDExtractorActivity">
+
+    <EditText
+        android:id="@+id/searchBox"
+        android:layout_width="294dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="59dp"
+        android:width="300dp"
+        android:height="50dp"
+        android:background="@drawable/inputfield"
+        android:drawableStart="@drawable/ic_search_black_24dp"
+        android:ems="10"
+        android:fontFamily="@font/audiowide"
+        android:hint="Enter the device name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:layout_marginLeft="58dp"
+        android:layout_marginRight="59dp"
+        android:drawableLeft="@drawable/ic_search_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="118dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Device ID extractor"
+        android:textColor="@color/skyblue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_marginLeft="117dp"
+        android:layout_marginRight="118dp" />
+
+    <Button
+        android:id="@+id/extractButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="185dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/audiowide"
+        android:onClick="extractClicked"
+        android:text="Extract"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBox" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="156dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/placeholderlined"
+        android:layout_marginLeft="155dp"
+        android:layout_marginRight="156dp" />
+
+    <TextView
+        android:id="@+id/idTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="167dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Device ID:"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extractButton"
+        android:layout_marginLeft="166dp"
+        android:layout_marginRight="167dp" />
+
+    <TextView
+        android:id="@+id/actualID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginBottom="209dp"
+        android:fontFamily="@font/audiowide"
+        android:textColor="@color/skyblue"
+        android:text=""
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBox"
+        android:layout_marginLeft="58dp" />
+
+    <ImageView
+        android:id="@+id/copyButton"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginBottom="198dp"
+        android:onClick="copyClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBox"
+        app:srcCompat="@drawable/copy" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="151dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginRight="130dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/audiowide"
+        android:onClick="nextClicked"
+        android:text="Map view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
